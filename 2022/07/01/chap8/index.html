@@ -16,21 +16,22 @@
   <meta name="author" content="Shen J.">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Assumption 5.1 [Ergodic Stationarity]: \(\left\{ Y_t, X_t&#39; \right\}_{t&#x3D;1}^{&#39;n}\) is jointly stationary and ergodic Assumption 5.2 [Linearity]: \(Y_t &#x3D; X_t&#39; \beta^o + \varepsilon_t\) Assum">
+    <meta name="description" content="To estimate the unknown parameter vector $ _{K} $ Suppose there exist moment function \(\mathop{m_t(β)}\limits_{l\times1}\) (assume \(l\geq K\)) and \(E[m_t(\beta^o)]&#x3D;0\) for unknown true parameter \(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chap 5">
-<meta property="og:url" content="http://example.com/2022/06/30/artical-title/index.html">
+<meta property="og:title" content="GMM">
+<meta property="og:url" content="http://example.com/2022/07/01/chap8/index.html">
 <meta property="og:site_name" content="Shen J.">
-<meta property="og:description" content="Assumption 5.1 [Ergodic Stationarity]: \(\left\{ Y_t, X_t&#39; \right\}_{t&#x3D;1}^{&#39;n}\) is jointly stationary and ergodic Assumption 5.2 [Linearity]: \(Y_t &#x3D; X_t&#39; \beta^o + \varepsilon_t\) Assum">
+<meta property="og:description" content="To estimate the unknown parameter vector $ _{K} $ Suppose there exist moment function \(\mathop{m_t(β)}\limits_{l\times1}\) (assume \(l\geq K\)) and \(E[m_t(\beta^o)]&#x3D;0\) for unknown true parameter \(">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-30T12:22:16.000Z">
-<meta property="article:modified_time" content="2022-06-30T12:25:12.938Z">
+<meta property="article:published_time" content="2022-07-01T02:33:02.000Z">
+<meta property="article:modified_time" content="2022-07-01T02:35:23.180Z">
 <meta property="article:author" content="Shen J.">
+<meta property="article:tag" content="AdvEconometrics">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Chap 5 - Shen J.</title>
+  <title>GMM - Shen J.</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -68,7 +69,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -98,7 +99,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>Shen J.</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -199,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Chap 5"></span>
+            <span id="subtitle">GMM</span>
           
         </div>
 
@@ -210,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-06-30 20:22" pubdate>
-          2022年6月30日 晚上
+        <time datetime="2022-07-01 10:33" pubdate>
+          2022年7月1日 上午
         </time>
       </span>
     
@@ -222,20 +223,11 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.2k 字
+          6.1k 字
         
       </span>
     
 
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          44 分钟
-        
-      </span>
     
 
     
@@ -271,212 +263,240 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Chap 5</h1>
+            <h1 style="display: none">GMM</h1>
             
             
               <div class="markdown-body">
                 
-                <ul>
-<li><strong>Assumption 5.1 [Ergodic Stationarity]:</strong> <span
-class="math inline">\(\left\{ Y_t, X_t&#39;
-\right\}_{t=1}^{&#39;n}\)</span> is jointly stationary and ergodic</li>
-<li><strong>Assumption 5.2 [Linearity]:</strong> <span
-class="math inline">\(Y_t = X_t&#39; \beta^o +
-\varepsilon_t\)</span></li>
-<li><strong>Assumption 5.3 [Correct Model Specification]:</strong> <span
-class="math inline">\(E(\varepsilon_t|X_t)=0\)</span> with <span
-class="math inline">\(E(\varepsilon_t^2)=\sigma^2&lt;\infty\)</span></li>
-<li><strong>Assumption 5.4 [Nonsingularity]: </strong><span
-class="math inline">\(Q=E(X_tX_t&#39;)\)</span> is symmetric, finite and
-nonsingular</li>
-<li><strong>Assumption 5.5 [MDS]: </strong><span
-class="math inline">\(\left\{X_t\varepsilon_t\right\}\)</span> is MDS
-with respect to the <span class="math inline">\(\sigma\)</span>-field
-generated by <span class="math inline">\(\left\{X_t\varepsilon_t,
-s&lt;t\right\}\)</span> and <span
-class="math inline">\(\mathop{V}\limits_{K\times K}\equiv
-var(X_t\varepsilon_t)=E(X_tX_t&#39;\varepsilon_t^2)\)</span> is finite
-and PD.</li>
-</ul>
-<h3 id="consistency">5.3 Consistency</h3>
-<p>For proof, we introduce <strong>WLLN for Ergodic Stationary
-Process</strong></p>
+                <p>To estimate the unknown parameter vector $ _{K} $</p>
+<p>Suppose there exist moment function <span
+class="math inline">\(\mathop{m_t(β)}\limits_{l\times1}\)</span> (assume
+<span class="math inline">\(l\geq K\)</span>) and <span
+class="math inline">\(E[m_t(\beta^o)]=0\)</span> for unknown true
+parameter <span class="math inline">\(\beta^o\)</span></p>
+<p>We construct the sample analog as <span
+class="math inline">\(\mathop{\hat m(β)}\limits_{l\times
+1}=\frac{1}{n}\sum_{t=1}^n \mathop{m_t(β)}\limits_{l\times
+1}\)</span></p>
+<p>Then the GMM estimator is <span class="math display">\[
+\hat \beta  =\arg \min_{\beta \in \Theta} \hat m(\beta) &#39; \hat
+W^{-1} \hat m(\beta)
+\]</span> <strong>Remark</strong> Moment function may be nonlinear, thus
+GMM estimator may not have a closed form. But there is a special case
+when the moment function has the form <span class="math inline">\(m_t(β)
+= \mathop{Z_t}\limits_{l\times 1} (Y_t-X_t&#39;\beta)\)</span>. Then,
+GMM estimator has the form like (<strong>Proof Required !</strong>)
+<span class="math display">\[
+\hat \beta = (X&#39;Z\hat W^{-1}Z&#39;X)^{-1}X&#39;Z\hat W^{-1}Z&#39;Y
+\]</span> 2SLS estimator and OLS estimator is the special case of this
+linear IV estimator.</p>
+<h3 id="consistency">8.3 Consistency</h3>
+<p>We introduce 4 assumptions</p>
 <ul>
-<li><em>If <span class="math inline">\(\left\{ Z_t \right\}\)</span> is
-a stationary ergodic process with <span
-class="math inline">\(E(Z_t)=\mu\)</span> and <span
-class="math inline">\(E|Z_t|&lt;\infty\)</span>. Then <span
-class="math inline">\(\bar Z_n \xrightarrow{p} \mu\)</span></em></li>
-</ul>
-<p>Under Assumption 5.1-5.4, <span class="math display">\[
-\hat \beta - \beta^o \xrightarrow{p} 0
-\]</span></p>
-<h3 id="asymptotic-normality">5.4 Asymptotic Normality</h3>
-<p>For proof, we introduce <strong>CLT for Ergodic Stationary
-MDS</strong></p>
-<ul>
-<li><em>If <span class="math inline">\(\left\{ Z_t \right\}\)</span> is
-stationary ergodic MDS with <span class="math inline">\(var(Z_t)=
-V\)</span> finite, symmetric and positive definite. Then as</em>
-<em><span class="math inline">\(\sqrt{n} \bar Z_n \xrightarrow{d}
-N(0,V)\)</span></em></li>
-</ul>
-<h5 id="htk">HTK</h5>
-<p>Under Assumption 5.1-5.5, <span class="math display">\[
-\sqrt{n} (\hat \beta - \beta^o ) \xrightarrow{d} N(0,Q^{-1}VQ^{-1})
-\]</span></p>
-<h5 id="hmk">HMK</h5>
-<p>Under Assumption 5.1-5.5 and conditional homoskedasticity <span
-class="math inline">\(E(\varepsilon_t^2|X_t)=\sigma^2\)</span>
-(Assumption 5.6) <span class="math display">\[
-\sqrt{n} (\hat \beta - \beta^o ) \xrightarrow{d} N(0,\sigma^2Q^{-1})
-\]</span></p>
-<h3 id="asymptotic-variance-estimator">5.5 Asymptotic Variance
-Estimator</h3>
-<h5 id="hmk-1">HMK</h5>
-<p>Under Assumption 5.1-5.5, <span class="math display">\[
-s^2 \xrightarrow{p}\sigma^2
-\]</span> and thus <span class="math display">\[
-s^2\hat Q^{-1} \xrightarrow{p} \sigma^2Q^{-1}
-\]</span></p>
-<h5 id="htk-1">HTK</h5>
-<p>Under Assumption 5.1-5.5 and <span
-class="math inline">\(E(X_{jt}^4)&lt;\infty\)</span> for <span
-class="math inline">\(0\leq j \leq k\)</span> and <span
-class="math inline">\(E(\varepsilon_t^4)&lt;\infty\)</span> (Assumption
-5.7), <span class="math display">\[
-\hat V \equiv \frac{1}{n}\sum_{t=1}^nX_tX_t&#39;e_t^2 \xrightarrow{p} V
-\]</span> and thus <span class="math display">\[
-\hat Q^{-1} \hat V\hat Q^{-1} \xrightarrow{p}Q^{-1}VQ^{-1}
-\]</span></p>
-<h3 id="hypothesis-testing">5.6 Hypothesis Testing</h3>
-<h5 id="hmk-2">HMK</h5>
-<p>Under Assumption 5.1-5.5 and conditional homoskedasticity <span
-class="math inline">\(E(\varepsilon_t^2|X_t)=\sigma^2\)</span>
-(Assumption 5.6), under <span
-class="math inline">\(\textbf{H}_0\)</span></p>
-<p>$$ <span class="math display">\[\begin{align}
-\text{when }J=1: \quad &amp; T = \frac{R \hat \beta - r}{\sqrt{s^2} R
-(X&#39;X)^{-1} R&#39;}  \xrightarrow{p} N(0,1) \\
-
-\text{when }J\geq1: \quad &amp; W = J \cdot F = \frac{(R\hat \beta -
-r)&#39;[R(X&#39;X)^{-1}R&#39;]^{-1}(R\hat \beta - r)}{s^2}
-\xrightarrow{d} \chi_{J}^2
-\end{align}\]</span> $$</p>
-<h5 id="htk-2">HTK</h5>
-<p>Under Assumption 5.1-5.5 and 5.7, under <span
-class="math inline">\(\textbf{H}_0\)</span></p>
-<p>$$ <span class="math display">\[\begin{align}
-\text{when } J=1: \quad &amp;
-
-T_r = \frac{\sqrt{n}(R\hat \beta -r )}{\sqrt{R \hat Q^{-1} \hat V \hat
-Q^{-1} R&#39;}} \xrightarrow{d} N(0,1) \\
-
-\text{when } J\geq 1: \quad &amp;
-W_r = n (R\hat \beta -r )&#39; [R \hat Q^{-1} \hat V \hat Q^{-1}
-R&#39;]^{-1}(R\hat \beta -r ) \xrightarrow{d} \chi_{J}^2
-\end{align}\]</span> $$</p>
-<h1 id="chap-6-hac-estimation">Chap 6 HAC Estimation</h1>
-<ul>
-<li><strong>Assumption 6.1 [Ergodic stationarity]:</strong> <span
-class="math inline">\(\left\{ Y_t, X_t&#39;
-\right\}_{t=1}^{&#39;n}\)</span> is an observable stationary ergodic
-process.</li>
-<li><strong>Assumption 6.2 [Linearity]:</strong> <span
-class="math inline">\(Y_t = X_t&#39; \beta^o +
-\varepsilon_t\)</span></li>
-<li><strong>Assumption 6.3 [Correct model specification]: </strong><span
-class="math inline">\(E(\varepsilon_t|X_t)=0\)</span></li>
-<li><strong>Assumption 6.4 [Nonsingularity]: </strong> <span
-class="math inline">\(\mathop{Q}\limits_{K\times
-K}=E(X_tX_t&#39;)\)</span> is symmetric, finite and nonsingular.</li>
-<li><strong>Assumption 6.5 [Long-run variance]:</strong>
+<li><p><strong>Assumption 8.1 [Compactness]: </strong> Parameter space
+<span class="math inline">\(\Theta\)</span> is compact set.</p></li>
+<li><p><strong>Assumption 8.2 [Uniform convergence]</strong>:</p>
 <ul>
 <li><ol type="a">
-<li><span class="math inline">\(\sum_{j=-\infty}^{\infty} ||\Gamma(j)||
-&lt; ∞\)</span> where $ (j) cov(X_t<em>t, X</em>{t-j}_{t-j})$ and <span
-class="math inline">\(V = \sum_{j=-\infty}^{\infty} \Gamma(j)\)</span>
-is PD</li>
+<li>moment function <span class="math inline">\(m_t(\beta)\)</span> is
+measurable function for each <span class="math inline">\(β\in
+\Theta\)</span>, and given each <span class="math inline">\(t\)</span>,
+<span class="math inline">\(m_t(β)\)</span> is continuous in <span
+class="math inline">\(β \in \Theta\)</span>.</li>
 </ol></li>
 <li><ol start="2" type="a">
-<li>$E(X_t<em>t|X</em>{t-j}<em>{t-j},X</em>{t-j-1}_{t-j-1},) 0 j $</li>
+<li><span class="math inline">\(\bigl\{m_t(\beta)\bigr\}\)</span> is
+stationary ergodic</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li><span class="math inline">\(\hat m(β)\)</span> convergences
+uniformly over <span class="math inline">\(Θ\)</span> to <span
+class="math inline">\(m(β)\equiv E(m_t(β))\)</span>, i.e. <span
+class="math display">\[
+\sup_{\beta\in\Theta}|| \hat m(\beta) - m(\beta) || \xrightarrow{p}0
+\]</span></li>
+</ol></li>
+<li><ol start="4" type="a">
+<li><span class="math inline">\(m(β)\)</span> is continuous in <span
+class="math inline">\(β \in \Theta\)</span></li>
+</ol></li>
+</ul></li>
+<li><p><strong>Assumption 8.3 [Specification]:</strong> exist unique
+true parameter <span class="math inline">\(β^o\in\Theta\)</span> such
+that <span class="math inline">\(m(β^o)=0\)</span></p></li>
+<li><p><strong>Assumption 8.4 [Weighting matrix]:</strong> $<em>{ll}
+</em>{ll} $ where <span class="math inline">\(W\)</span> is
+nonstochastic, symmetric, finite and nonsingular.</p></li>
+</ul>
+<p>Under Assumption 8.1 to 8.4, we can prove (not required) <span
+class="math display">\[
+\hat \beta \xrightarrow{p} \beta^o
+\]</span></p>
+<h3 id="asymptotic-normality">8.4 Asymptotic Normality</h3>
+<p>We further introduce two assumptions</p>
+<ul>
+<li><p><strong>Assumption 8.5 [Interirorness]:</strong> <span
+class="math inline">\(β^o \in int(Θ)\)</span></p></li>
+<li><p><strong>Assumption 8.6 [CLT]:</strong></p>
+<ul>
+<li><ol type="a">
+<li>for each <span class="math inline">\(t\)</span>, <span
+class="math inline">\(m_t(β)\)</span> is continuously differentiable
+with respect to <span class="math inline">\(β \in Θ\)</span> w/p 1</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>as <span class="math inline">\(n → \infty\)</span>​​, <span
+class="math display">\[
+\sqrt{n} \hat m(\beta^o)\equiv\frac{1}{\sqrt{n}} \sum_{t=1}n
+m_t(\beta^o) \xrightarrow{d} N(0,V_o) \text{\quad where } V_o \equiv
+avar(\sqrt{n} \hat m(\beta^o))
+\]</span></li>
 </ol></li>
 <li><ol start="3" type="a">
 <li><span
-class="math inline">\(\sum_{j=0}^\infty[E(r_j&#39;r_j)]^{1/2}&lt;\infty\)</span>
-Where <span
-class="math inline">\(r_j=E(X_t\varepsilon_t|X_{t-j}\varepsilon_{t-j},X_{t-j-1}\varepsilon_{t-j-1},\cdots)
--E(X_t\varepsilon_t|X_{t-j-1}\varepsilon_{t-j-1},X_{t-j-2}\varepsilon_{t-j-2},\cdots)\)</span></li>
+class="math inline">\(\left\{\frac{\partial}{\partial\beta}m_t(\beta)\right\}\)</span>
+obey UWLLN, i.e. <span class="math display">\[
+\sup_{\beta\in\Theta}\biggl|\biggl| \frac{1}{n}\sum_{t=1}^n
+\frac{\partial m_t(\beta)}{\partial \beta} - D(\beta)
+\biggl|\biggl|  \xrightarrow{p}0 \\
+\text{where } D(\beta)\equiv E\biggl(\frac{\partial m_t(\beta)}{\partial
+\beta} \biggr) = \frac{\partial E[m_t(\beta)]}{\partial
+\beta}=\frac{\partial m(\beta)}{\partial \beta}
+\]</span></li>
 </ol></li>
 </ul></li>
 </ul>
-<h3 id="consistency-1">Consistency</h3>
-<p>Under Assumption 6.1-6.5.a <span class="math display">\[
-\hat \beta \xrightarrow{p} \beta^o
+<p>Under Assumption 8.1 to 8.6, we have <strong>(Proof Required
+!)</strong> <span class="math display">\[
+\sqrt{n} (\hat\beta - \beta^o ) \xrightarrow{d} N(0,\Omega) \\
+  \text{where\quad } \Omega =
+(D_o&#39;W^{-1}D_o)^{-1}D_o&#39;W^{-1}V_oW^{-1}D_o(D_o&#39;W^{-1}D_o)^{-1}
+\text{ and } D_o \equiv D(\beta^o)
 \]</span></p>
-<h3 id="asymptotic-normality-1">Asymptotic Normality</h3>
-<p>For proof, we introduce <strong>CLT for Zero Mean Ergodic Stationary
-Processes</strong></p>
+<h3 id="asymptotic-efficiency">8.5 Asymptotic Efficiency</h3>
+<p>Given moment function <span class="math inline">\(m_t(β)\)</span>, we
+want to choose the optimal <span class="math inline">\(\hat W\)</span>
+such that GMM estimator has minium variance.</p>
+<p>Conclusion is that the optimal choice is <strong>(Proof Required
+!)</strong> <span class="math display">\[
+W = V_0 \equiv avar[\sqrt{n}\hat m(\beta^o)]
+\]</span> and corresponding variance is <span class="math display">\[
+\Omega_o = (D_o&#39; V_o^{-1} D_o)^{-1}
+\]</span> Intuition is that, we assign smaller weights to the moments
+which have larger sampling variation</p>
+<p><strong>Remark:</strong> <span
+class="math inline">\(\hatβ_{2SLS}\)</span> can be GMM estimator by
+choosing <span class="math inline">\(\hat W = Z&#39;Z\)</span>. Further,
+$_{2SLS} $ can be optimal GMM estimator under MDS and HMK.
+<strong>[proof required !]</strong></p>
+<p>But in practice, <span class="math inline">\(V_o\)</span> is not
+available, so we can use its asymptotic estimator <span
+class="math inline">\(\hat W = \tilde V, \text{ where } \tilde V
+\xrightarrow{p}V_o\)</span>. So, we have the following two steps
+GMM:</p>
 <ul>
-<li><em>Suppose <span class="math inline">\(\left\{Z_t\right\}\)</span>
-is a stationary ergodic process with</em>
+<li><p><strong>Step 1:</strong> Find a consistent estimator $β $​ by
+<span class="math display">\[
+\tilde \beta = \arg\max_{\beta \in \Theta}\hat m(\beta)&#39;\hat
+W^{-1}\hat m(\beta), \text{\quad where for convenience } \hat W = I
+\]</span> and we use <span class="math inline">\(\tilde\beta\)</span> to
+construct a asymptotic estimtor <span class="math inline">\(\tilde V
+\xrightarrow{p} V_o\)</span>. Construction depends on MDS:</p>
 <ul>
-<li><em><span class="math inline">\(E(Z_t)=0\)</span>;</em></li>
-<li><em><span class="math inline">\(V = \sum_{j=-\infty}^{\infty}
-\Gamma(j)\)</span> is finite and nonsingular, where <span
-class="math inline">\(\Gamma(j)=E(Z_tZ_{t-j}&#39;)\)</span>;</em></li>
-<li><em><span class="math inline">\(E(Z_t|Z_{t-j},Z_{t-j-1},\cdots)
-\xrightarrow{q.m.}0\)</span>;</em></li>
-<li><em><span
-class="math inline">\(\sum_{j=0}^\infty[E(r_j&#39;r_j)]^{1/2}&lt;\infty\)</span>
-where <span
-class="math inline">\(r_j=E(Z_t|Z_{t-j},Z_{t-j-1},\cdots)-E(X_t\varepsilon_t|X_{t-j-1}\varepsilon_{t-j-1},X_{t-j-2}\varepsilon_{t-j-2},\cdots)\)</span></em></li>
-</ul></li>
-</ul>
-<p>​ <em>Then, <span class="math inline">\(\frac{1}{\sqrt{n}} \bar Z_n
-\xrightarrow{d} N(0,V)\)</span></em></p>
-<p>Under Assumption 6.1-6.5 <span class="math display">\[
-\sqrt{n}(\hat \beta -\beta^o) \xrightarrow{d} N(0, Q^{-1}VQ^{-1}) \text{
-where } V = \sum_{j=-\infty}^{\infty} \Gamma(j)
-\]</span></p>
-<h3 id="asymptotic-variance-estimator-1">Asymptotic Variance
-Estimator</h3>
-<p>To estimate the asymptotic variance <span class="math inline">\(V =
-\sum_{j=-\infty}^{\infty} \Gamma(j)\)</span>, first consider a naive
-estimator <span class="math display">\[
-\hat V = \sum_{j=-(n-1)}^{n-1}\hat\Gamma(j)
-\]</span> where <span class="math inline">\(\hat\Gamma(j)
-\xrightarrow{p}\Gamma(j)\)</span>, but <span class="math inline">\(\hat
-V \nrightarrow^p V\)</span> since there are too many terms and variance
-may explosive.</p>
-<p>Then, we consider the truncated sum <span class="math display">\[
-\hat V = \sum_{j=-p}^{p}\hat\Gamma(j)
-\]</span> But when <span class="math inline">\(p\)</span> is fixed, we
-could expect <span class="math inline">\(\hat V
-\xrightarrow{p}\sum_{j=-p}^{p}\Gamma(j) \neq V\)</span>.</p>
-<p>Hence, we should <strong>let <span class="math inline">\(p\)</span>
-grows to infinity as <span class="math inline">\(n \rightarrow
-\infty\)</span> but cannot grow as fast as sample size <span
-class="math inline">\(n\)</span>.</strong> Otherwise, the variance of
-<span class="math inline">\(\hat V\)</span> will never vanish to zero.
-Therefore, to ensure consistency of <span class="math inline">\(\hat
-V\)</span> to <span class="math inline">\(V\)</span>, we should balance
-the bias and the vaiance of <span class="math inline">\(\hat V\)</span>
-properly. Consider <span class="math display">\[
-\hat V = \sum_{j=-p_n}^{p_n}\hat\Gamma(j), \text{ where } p_n
-\rightarrow \infty, p_n/n \rightarrow 0
-\]</span> Although this estimator is consistent for <span
-class="math inline">\(V\)</span>, it may not be positive semi-definite
-for all <span class="math inline">\(n\)</span>. So, use a weighted
-average estimator where weighting function <span
-class="math inline">\(k(j/p_n)\)</span> is kernel function. <span
+<li><p><strong>Case I :<span
+class="math inline">\(\left\{m_t(β^o)\right\}\)</span> is
+MDS</strong></p>
+<p>In this case, <span class="math inline">\(V_o\equiv avar[\sqrt{n}\hat
+m(β^o)]=E[m_t(β^o)m_t(β^o)&#39;]\)</span></p>
+<p>we construct <span class="math inline">\(\tilde V\)</span> as follows
+<strong>(Consistency Proof Required !)</strong> <span
 class="math display">\[
-\hat V = \sum_{j=-p_n}^{p_n}k(j/p_n)\hat\Gamma(j)
+\tilde V = \frac{1}{n}\sum_{t=1}^{n}m_t(\tilde β)m_t(\tilde β)&#39;
+\]</span></p></li>
+<li><p><strong>Case II :<span
+class="math inline">\(\left\{m_t(β^o)\right\}\)</span> is
+non-MDS</strong></p>
+<p>in this case, <span
+class="math inline">\(V_o=\mathop{\sum}\limits_{j=-\infty}^{∞}Γ(j)\)</span>
+where <span
+class="math inline">\(Γ(j)=cov[m_t(β_o),m_{t-j}(\beta_o)]=E[m_t(β_o)m_{t-j}(\beta_o)]\)</span></p>
+<p>we construct <span class="math inline">\(\tilde V\)</span> as follows
+<span class="math display">\[
+\tilde V = \sum_{j=1-n}^{n-1}k(j/p)\tilde \Gamma(j) \text{ where }
+\tilde \Gamma(j)=\frac{1}{n}\sum_{t=j+1}^n m_t(\tilde
+\beta)m_{t-j}(\tilde\beta)&#39;
+\]</span></p></li>
+</ul></li>
+<li><p><strong>Step 2:</strong> Choose <span class="math inline">\(\hat
+W = \tilde V\)</span>, then we can find optimal estimator <span
+class="math inline">\(\hatβ\)</span>: <span class="math display">\[
+\hat\beta = \arg\min_{\beta\in\Theta} \hat m(\beta)&#39;\tilde
+V^{-1}\hat m(\beta)
+\]</span> and <span class="math display">\[
+\sqrt{n}(\hat\beta -\beta^o) \xrightarrow{d}N(0,\Omega_o) \text{ where
+}\Omega_o=(D_o&#39;V_o^{-1}D_o)^{-1}
+\]</span></p></li>
+</ul>
+<h3 id="hypothesis-test">8.8 Hypothesis Test</h3>
+<p>Consider testing null hypothesis <span class="math display">\[
+\textbf{H}_0: R(\beta^o)=r
+\]</span> where <span class="math inline">\(R(\cdot)\)</span> is a <span
+class="math inline">\(J\times 1\)</span> continuously differentiable
+function, which allows for nonlinear restriction. And we want to relate
+<span class="math inline">\(R(\hat β)-r\)</span> with <span
+class="math inline">\(\sqrt{n}(\hat β-β^o)\)</span>.</p>
+<p>By Taylor expansion we have <span
+class="math inline">\(\mathop{R(\hat β)}\limits_{J\times
+1}=\mathop{R(β^o)}\limits_{J\times 1}+\mathop{\frac{dR(\bar
+\beta)}{dβ}}\limits_{J\times K}\mathop{(\hat β -
+β^o)}\limits_{K\times1}\)</span> where <span
+class="math inline">\(\barβ=λ\hatβ+(1-λ)β^o\)</span>.</p>
+<p>Thus $$ <span class="math display">\[\begin{align}
+\sqrt{n}[R(\hat\beta)-r] &amp;=
+
+\sqrt{n}\mathop{[R(\beta^o)-r]}\limits_{^{H_0} = 0}+\frac{dR(\bar
+\beta)}{dβ}\mathop{\sqrt{n}(\hat\beta-\beta^o)}\limits_{\xrightarrow{d}N(0,\Omega_o)}
+\\
+
+&amp;\xrightarrow{H_0}{N(0,\frac{dR(\beta^o)}{dβ}\Omega_o\frac{dR(\beta^o)}{dβ&#39;})}
+
+\end{align}\]</span> <span class="math display">\[
+We can construct the T-test and Wald test statistic
+\]</span> <span class="math display">\[\begin{align}
+\text{when } J=1: \quad&amp; T \equiv
+\frac{\sqrt{n}[R(\hat\beta)-r]}{\sqrt{\frac{dR(\hat
+\beta)}{dβ}\hat\Omega_o\frac{dR(\hat \beta)}{dβ&#39;}}} \xrightarrow{d}
+N(0,1)
+\\
+\text{when } J\geq1: \quad &amp;
+W \equiv n [R(\hat\beta)-r]&#39;\biggl[\frac{dR(\hat
+\beta)}{dβ}\hat\Omega_o\frac{dR(\hat
+\beta)}{dβ&#39;}\biggr]^{-1}[R(\hat\beta)-r] \xrightarrow{d} \chi^2_J
+\end{align}\]</span> $$</p>
+<h3 id="overidentification-test">8.9 Overidentification Test</h3>
+<p>For the null hypothetis test <span class="math display">\[
+\text{H}_0: E[m_t(\beta^o)]=0 \text{\quad for some unknown }\beta^o
+\]</span> Consider the sample analog <span class="math inline">\(\hat
+m(\hat \beta)=\frac{1}{n}\sum_{t=1}^nm_t(\hatβ)\)</span> and see whether
+it is significantly different from 0.</p>
+<p>So, we have the following so called <em><span
+class="math inline">\(J\)</span> test statistic</em> [proof not
+required] <span class="math display">\[
+J \equiv n \cdot \hat m(\beta)&#39;\tilde V^{-1}\hat m(\beta)
+\xrightarrow{d}\chi^2_{l-K}
 \]</span></p>
-<h3 id="hypothethis-test">Hypothethis Test</h3>
-<p>Under Assuption 6.1-6.5 and directly assume <span
-class="math inline">\(\hat V \xrightarrow{p}V\)</span> (Assumption 6.6),
-then under <span class="math inline">\(\textbf{H}_0\)</span></p>
+<ul>
+<li>Remark 1: <span class="math inline">\(J\)</span> test statistic only
+valid when <span class="math inline">\(l\geq K\)</span>. (notice the
+degree of freedom is <span class="math inline">\(l-K\)</span>)</li>
+<li>Remark 2: <span class="math inline">\(J\)</span> test statistic is
+actually "n times the value of step 2 GMM objective function".</li>
+<li>Remark 3: we prefer a smaller <span
+class="math inline">\(J\)</span>, since the null hypothesis is IV is
+valid.</li>
+</ul>
+<p>Specially, under 2SLS procedures, we have so called <em>Sargan's
+Test</em> **[Proof Required !]</p>
 
                 
               </div>
@@ -486,51 +506,17 @@ then under <span class="math inline">\(\textbf{H}_0\)</span></p>
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/AdvEconometrics/">#AdvEconometrics</a>
+      
+    </div>
+  
 </div>
 
 
               
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>Chap 5</div>
-      <div>http://example.com/2022/06/30/artical-title/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>Shen J.</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年6月30日</div>
-        </div>
-      
-      
-      <div class="license-meta-item">
-        <div>许可协议</div>
-        <div>
-          
-            
-            
-              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-              <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                <i class="iconfont icon-by"></i>
-              </span>
-              </a>
-            
-          
-        </div>
-      </div>
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
 
               
                 <div class="post-prevnext my-3">
@@ -541,8 +527,8 @@ then under <span class="math inline">\(\textbf{H}_0\)</span></p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/06/30/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2022/07/01/chap7/" title="IV Regression">
+                        <span class="hidden-mobile">IV Regression</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -677,21 +663,6 @@ then under <span class="math inline">\(\textbf{H}_0\)</span></p>
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
 
 
