@@ -16,15 +16,15 @@
   <meta name="author" content="Shen J.">
   <meta name="keywords" content="">
   
-    <meta name="description" content="To estimate the unknown parameter vector $ _{K} $ Suppose there exist moment function \(\mathop{m_t(β)}\limits_{l\times1}\) (assume \(l\geq K\)) and \(E[m_t(\beta^o)]&#x3D;0\) for unknown true parameter \(">
+    <meta name="description" content="from Yongmiao Hong&#39;s lecture notes chap8">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GMM">
 <meta property="og:url" content="http://example.com/2022/07/01/chap8/index.html">
 <meta property="og:site_name" content="Shen J.">
-<meta property="og:description" content="To estimate the unknown parameter vector $ _{K} $ Suppose there exist moment function \(\mathop{m_t(β)}\limits_{l\times1}\) (assume \(l\geq K\)) and \(E[m_t(\beta^o)]&#x3D;0\) for unknown true parameter \(">
+<meta property="og:description" content="from Yongmiao Hong&#39;s lecture notes chap8">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-07-01T02:33:02.000Z">
-<meta property="article:modified_time" content="2022-07-01T02:35:23.180Z">
+<meta property="article:modified_time" content="2022-07-01T02:44:52.759Z">
 <meta property="article:author" content="Shen J.">
 <meta property="article:tag" content="AdvEconometrics">
 <meta name="twitter:card" content="summary_large_image">
@@ -268,7 +268,7 @@
             
               <div class="markdown-body">
                 
-                <p>To estimate the unknown parameter vector $ _{K} $</p>
+                <p>To estimate the unknown parameter vector $ _{K } $</p>
 <p>Suppose there exist moment function <span
 class="math inline">\(\mathop{m_t(β)}\limits_{l\times1}\)</span> (assume
 <span class="math inline">\(l\geq K\)</span>) and <span
@@ -459,10 +459,10 @@ class="math inline">\(\barβ=λ\hatβ+(1-λ)β^o\)</span>.</p>
 \\
 
 &amp;\xrightarrow{H_0}{N(0,\frac{dR(\beta^o)}{dβ}\Omega_o\frac{dR(\beta^o)}{dβ&#39;})}
-
-\end{align}\]</span> <span class="math display">\[
-We can construct the T-test and Wald test statistic
-\]</span> <span class="math display">\[\begin{align}
+\end{align}\]</span> $$</p>
+<p>We can construct the T-test and Wald test statistic <span
+class="math display">\[
+\begin{align}
 \text{when } J=1: \quad&amp; T \equiv
 \frac{\sqrt{n}[R(\hat\beta)-r]}{\sqrt{\frac{dR(\hat
 \beta)}{dβ}\hat\Omega_o\frac{dR(\hat \beta)}{dβ&#39;}}} \xrightarrow{d}
@@ -472,7 +472,8 @@ N(0,1)
 W \equiv n [R(\hat\beta)-r]&#39;\biggl[\frac{dR(\hat
 \beta)}{dβ}\hat\Omega_o\frac{dR(\hat
 \beta)}{dβ&#39;}\biggr]^{-1}[R(\hat\beta)-r] \xrightarrow{d} \chi^2_J
-\end{align}\]</span> $$</p>
+\end{align}
+\]</span></p>
 <h3 id="overidentification-test">8.9 Overidentification Test</h3>
 <p>For the null hypothetis test <span class="math display">\[
 \text{H}_0: E[m_t(\beta^o)]=0 \text{\quad for some unknown }\beta^o
